@@ -62,12 +62,6 @@ body {
   overflow-y: auto;
 }
 
-.SideNav a {
-  color: #999;
-  padding-right: 8px;
-  display: inline-block;
-}
-
 .top-nav,
 .bottom-nav {
   padding-left: 40px;
@@ -91,13 +85,32 @@ body {
   border-left: 2px solid #ddd;
 }
 
-.page-links {
+.shop-links a {
+  color: black;
+}
+
+.page-links a {
   color: #999;
 }
 
 .shop-links ul li {
   font-size: 16px;
   padding: 0 8px;
+}
+
+.social-media-links a  {
+  color: #999;
+  padding-right: 8px;
+  display: inline-block;
+  transition: .5s;
+}
+
+.social-media-links:hover a {
+  color: #ccc;
+}
+
+.social-media-links:hover a:hover {
+  color: #999;
 }
 
 @media screen and (min-width: 1025px) {

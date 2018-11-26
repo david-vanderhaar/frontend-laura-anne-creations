@@ -13,18 +13,42 @@ class SideNav extends Component {
           <div className="shop-links">
             <div className="shop-link-header">Shop</div>
             <ul>
-              <li>Shop 1</li>
-              <li>Shop 2</li>
-              <li>Shop 3</li>
+              <li>
+                <a href="#">
+                  Shop 1
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Shop 2
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Shop 3
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="bottom-nav">
           <div className="page-links">
             <ul>
-              <li>Page 1</li>
-              <li>Page 2</li>
-              <li>Page 3</li>
+              <li>
+                <a href="#">
+                  Page 1
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Page 2
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Page 3
+                </a>
+              </li>
             </ul>
           </div>
           <div className="social-media-links">
