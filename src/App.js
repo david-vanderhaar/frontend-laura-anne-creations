@@ -1,45 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios';
+import React from 'react';
+import {BrowserRouter as Router, Route, HashRouter} from 'react-router-dom';
+import { AnimatedSwitch } from 'react-router-transition';
+import Home from './Components/Home.js';
+import Nav from './Components/Nav.js';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, fas)
 
-class App extends Component {
-
-  componentDidMount() {
-    axios.get('http://lauraecommercebackend.lndo.site/api/products?_format=json')
-      .then(function (response) {
-        // handle success
-        console.log(response);
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .then(function () {
-        // always executed
-      });
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React Boi
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <HashRouter>
+  <div>
+    <header id="header">
+      <Nav />
+    </header>
+    <main id="main">
+      <Route exact path={'/'} component={Home} />
+      <AnimatedSwitch
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+        className="fade"
+      >
+        <Route path={'/game'} component={Home} />
+        <Route path={'/battlesim'} component={Home} />
+      </AnimatedSwitch>
+    </main>
+  </div>
+  </HashRouter>
+)
 
 export default App;
