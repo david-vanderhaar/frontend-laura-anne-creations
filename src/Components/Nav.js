@@ -7,7 +7,7 @@ class Nav extends Component {
     return (
       <div className="Nav">
         <HeaderNav />
-        <SideNav />
+        <SideNav shops={this.props.shops}/>
       </div>
     );
   }

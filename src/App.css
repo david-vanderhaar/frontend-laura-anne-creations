@@ -89,13 +89,18 @@ body {
   color: black;
 }
 
+.page-links ul li {
+  font-size: 14px;
+  padding: 4px 0px;
+}
+
 .page-links a {
   color: #999;
 }
 
 .shop-links ul li {
-  font-size: 16px;
-  padding: 0 8px;
+  font-size: 14px;
+  padding: 4px 16px;
 }
 
 .social-media-links a  {
@@ -113,6 +118,30 @@ body {
   color: #999;
 }
 
+.Home {
+  padding: 72px;
+}
+
+.SimpleCard {
+  text-align: center;
+}
+
+img.cover-image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+img.carousel-image {
+  width: 100%;
+}
+
+.block-center {
+  margin: auto;
+  width: 50%;
+}
+
+/* Mobile */
 @media screen and (min-width: 1025px) {
   #main,
   .SideNav {

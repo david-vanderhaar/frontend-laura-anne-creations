@@ -5,7 +5,16 @@ import Logo from './Logo.js';
 class SideNav extends Component {
 
   render() {
-    // window.location.hash = '/game';
+    let shop_links = this.props.shops.map((shop, index) => {
+      return (
+        <li key={index}>
+          <a href="#">
+            {shop.title}
+          </a>
+        </li>
+      );
+    });
+
     return (
       <div id="sideNav" className="SideNav">
         <Logo />
@@ -13,21 +22,7 @@ class SideNav extends Component {
           <div className="shop-links">
             <div className="shop-link-header">Shop</div>
             <ul>
-              <li>
-                <a href="#">
-                  Shop 1
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Shop 2
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Shop 3
-                </a>
-              </li>
+              {shop_links}
             </ul>
           </div>
         </div>

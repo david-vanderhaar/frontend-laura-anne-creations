@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'react-materialize';
+import SimpleCard from './SimpleCard';
+import SimpleCarousel from './SimpleCarousel';
 import '../App.css';
-import axios from 'axios';
 
 class Home extends Component {
-
-  componentDidMount() {
-    axios.get('http://lauraecommercebackend.lndo.site/api/products?_format=json')
-      .then(function (response) {
-        // handle success
-        console.log(response);
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .then(function () {
-        // always executed
-      });
-  }
-
   render() {
+    let shops = this.props.shops.map((shop, index) => {
+      return (
+        <Col s={12} m={4} key={`col-${index}`}>
+          <SimpleCard title={shop.title} image_source={shop.image_source} />
+        </Col>
+      )
+    });
     return (
       <div className="Home">
-        Home
+        <Row>
+          <div className="center">
+            <SimpleCarousel duration={10000} images={[
+              'https://lorempixel.com/800/400/food/1',
+              'https://lorempixel.com/800/400/food/2',
+              'https://lorempixel.com/800/400/food/3',
+              'https://lorempixel.com/800/400/food/4',
+              'https://lorempixel.com/800/400/food/5'
+            ]} />
+          </div>
+        </Row>
+        <Row>
+          { shops }
+        </Row>
       </div>
     );
   }
