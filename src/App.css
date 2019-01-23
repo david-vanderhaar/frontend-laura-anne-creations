@@ -126,6 +126,18 @@ body {
   text-align: center;
 }
 
+.SimpleCard {
+  color: black;
+}
+
+.SimpleCard .card-panel {
+  background-color: #f3f3f3;
+}
+
+.SimpleCarousel {
+  background-color: #f3f3f3;
+}
+
 img.cover-image {
   width: 100%;
   background-size: cover;
@@ -133,7 +145,8 @@ img.cover-image {
 }
 
 img.carousel-image {
-  width: 100%;
+  max-height: 75vh;
+  padding: 35px;
 }
 
 .block-center {
@@ -168,5 +181,9 @@ img.carousel-image {
   .SideNavMobile {
     display: block;
     padding: 0;
+  }
+  img.carousel-image {
+    width: 100%;
+    max-height: none;
   }
 }

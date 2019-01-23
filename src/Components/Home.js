@@ -6,28 +6,27 @@ import '../App.css';
 
 class Home extends Component {
   render() {
-    let shops = this.props.shops.map((shop, index) => {
+    let shops_cards = this.props.shops.map((shop, index) => {
       return (
         <Col s={12} m={4} key={`col-${index}`}>
-          <SimpleCard title={shop.title} image_source={shop.image_source} />
+          <a href={`#${shop.route}`}>
+            <SimpleCard title={shop.title} image_source={shop.image_source} />
+          </a>
         </Col>
       )
     });
+    let shop_images = this.props.shops.map((shop) => {
+      return (shop.image_source)
+    });    
     return (
       <div className="Home">
         <Row>
           <div className="center">
-            <SimpleCarousel duration={10000} images={[
-              'https://lorempixel.com/800/400/food/1',
-              'https://lorempixel.com/800/400/food/2',
-              'https://lorempixel.com/800/400/food/3',
-              'https://lorempixel.com/800/400/food/4',
-              'https://lorempixel.com/800/400/food/5'
-            ]} />
+            <SimpleCarousel duration={10000} images={shop_images} shops={this.props.shops} />
           </div>
         </Row>
         <Row>
-          { shops }
+          { shops_cards }
         </Row>
       </div>
     );

@@ -8,7 +8,6 @@ class SimpleCarousel extends Component {
     super(props);
     this.state = {
       index: 0,
-      length: this.props.images.length,
       timer: null,
     }
   }
@@ -16,7 +15,7 @@ class SimpleCarousel extends Component {
   componentDidMount () {
     let index = this.state.index;
     let timer = setInterval(() => {
-      if (index < this.state.length - 1) {
+      if (index < this.props.shops.length - 1) {
         index += 1;
       } else {
         index = 0;
@@ -32,21 +31,23 @@ class SimpleCarousel extends Component {
   }
 
   render() {
-    let images = this.props.images.map((src, index) => {
+    let shops = this.props.shops.map((shop, index) => {
       let is_visible = this.state.index === index;
       let display = is_visible ? 'block' : 'none';
       return (
         <Fade key={index} in={is_visible} timeout={1000}>
-          <div style={{display}}>
-            <img className='carousel-image' src={src} alt="shop" />
-          </div>
+          <a href={`#${shop.route}`}>
+            <div style={{display}}>
+                <img className='carousel-image' src={shop.image_source} alt="shop" />
+            </div>
+          </a>
         </Fade>
       )
     });
 
     return (
       <div className="SimpleCarousel">
-        {images}
+        {shops}
       </div>
     );
   }

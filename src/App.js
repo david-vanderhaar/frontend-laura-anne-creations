@@ -3,6 +3,7 @@ import * as Commerce from './helpers/Commerce';
 import {BrowserRouter as Router, Route, HashRouter} from 'react-router-dom';
 import { AnimatedSwitch } from 'react-router-transition';
 import Home from './Components/Home.js';
+import Shop from './Components/Shop.js';
 import Nav from './Components/Nav.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -30,6 +31,7 @@ class App extends Component {
             {
               title: category.name,
               image_source: product.media.source,
+              route: `/${category.slug}`,
             }
           );
         }
@@ -40,6 +42,12 @@ class App extends Component {
   }
 
   render() {
+    let shop_routes = this.state.shops.map((shop, index) => {      
+      return (
+        <Route key={`route-${index}`} path={shop.route} render={(props) => <Shop products={this.state.products} category={shop.title} />} />
+      )
+    });
+
     return (
       <HashRouter>
         <div>
@@ -54,8 +62,7 @@ class App extends Component {
               atActive={{ opacity: 1 }}
               className="fade"
             >
-              <Route path={'/game'} component={Home} />
-              <Route path={'/battlesim'} component={Home} />
+              {shop_routes}
             </AnimatedSwitch>
           </main>
         </div>

@@ -8,7 +8,7 @@ class SideNav extends Component {
     let shop_links = this.props.shops.map((shop, index) => {
       return (
         <li key={index}>
-          <a href="#">
+          <a href={`#${shop.route}`}>
             {shop.title}
           </a>
         </li>
