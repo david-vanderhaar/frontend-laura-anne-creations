@@ -6,12 +6,15 @@ import '../App.css';
 class Shop extends Component {
   render() {
     let products = this.props.products.data.map((product, index) => {
-      if (product.categories.find(category => category.name === this.props.category))
-      return (
-        <Col s={12} m={4} key={`col-${index}`}>
-          <SimpleCard title='' image_source={product.media.source} />
-        </Col>
-      )
+      if (product.categories.find(category => category.name === this.props.category)) {
+        return (
+          <Col s={12} m={4} key={`col-${index}`}>
+            <a href={`${product.checkout_url.display}`} target={'blank'}>
+              <SimpleCard title='' image_source={product.media.source} />
+            </a>
+          </Col>
+        )
+      }
     });
     return (
       <div className="Shop">

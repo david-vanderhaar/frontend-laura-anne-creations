@@ -122,6 +122,22 @@ body {
   padding: 72px;
 }
 
+.About {
+  padding: 0% 20%;
+}
+
+.Contact {
+  padding: 0% 20%;
+}
+
+.About .about-text {
+  font-size: 16px;
+}
+
+.About .block-center {
+  width: 75%;
+}
+
 .SimpleCard {
   text-align: center;
 }

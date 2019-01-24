@@ -3,6 +3,8 @@ import * as Commerce from './helpers/Commerce';
 import {BrowserRouter as Router, Route, HashRouter} from 'react-router-dom';
 import { AnimatedSwitch } from 'react-router-transition';
 import Home from './Components/Home.js';
+import About from './Components/About.js';
+import Contact from './Components/Contact.js';
 import Shop from './Components/Shop.js';
 import Nav from './Components/Nav.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -63,6 +65,8 @@ class App extends Component {
               className="fade"
             >
               {shop_routes}
+              <Route path={'/contact'} component={Contact} />
+              <Route path={'/about'} component={About} />
             </AnimatedSwitch>
           </main>
         </div>

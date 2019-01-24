@@ -30,36 +30,25 @@ class SideNav extends Component {
           <div className="page-links">
             <ul>
               <li>
-                <a href="#">
-                  Page 1
+                <a href="#/contact">
+                  Contact
                 </a>
               </li>
               <li>
-                <a href="#">
-                  Page 2
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Page 3
+                <a href="#/about">
+                  About
                 </a>
               </li>
             </ul>
           </div>
           <div className="social-media-links">
-            <a href='https://github.com/david-vanderhaar'>
+            <a href='https://www.instagram.com/laura_anne_creations/'>
               <FontAwesomeIcon
-                icon={['fab', 'github-square']}
+                icon={['fab', 'instagram']}
                 size="2x"
               />
             </a>
-            <a href='https://twitter.com/classicwook'>
-              <FontAwesomeIcon
-                icon={['fab', 'twitter-square']}
-                size="2x"
-              />
-            </a>
-            <a href='mailto:d.vanderhaarhunter@gmail.com'>
+            <a href='mailto:laura.anne.creations@gmail.com'>
               <FontAwesomeIcon
                 icon={['fas', 'envelope-square']}
                 size="2x"
