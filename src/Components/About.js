@@ -11,7 +11,7 @@ class About extends Component {
         </Row>
         <Row>
           <div className='block-center'>
-            <img className='cover-image' src={'/about.jpg'} alt="about" />
+            <img className='cover-image' src={'./about.jpg'} alt="about" />
           </div>
         </Row>
         <Row>

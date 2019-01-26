@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-materialize';
+import { Row } from 'react-materialize';
 import '../App.css';
 
 class Contact extends Component {
@@ -16,7 +16,7 @@ class Contact extends Component {
         </Row>
         <Row>
           <div className='block-center'>
-            <img className='cover-image' src={'/about.jpg'} alt="about" />
+            <img className='cover-image' src={'./about.jpg'} alt="about" />
           </div>
         </Row>
       </div>

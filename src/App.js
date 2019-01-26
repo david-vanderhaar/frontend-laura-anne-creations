@@ -28,7 +28,7 @@ class App extends Component {
 
     products.data.forEach(product => {
       product.categories.forEach(category => {
-        if (!shops.includes(category.name)) {
+        if (!shops.some((shop) => shop.title === category.name)) {
           shops.push(
             {
               title: category.name,
