@@ -8,7 +8,10 @@ class SideNav extends Component {
     let shop_links = this.props.shops.map((shop, index) => {
       return (
         <li key={index}>
-          <a href={`#${shop.route}`}>
+          <a 
+            href={`#${shop.route}`} 
+            className={`${window.location.hash === '#' + shop.route ? 'highlight-link' : ''}`}
+          >
             {shop.title}
           </a>
         </li>

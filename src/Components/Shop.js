@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-materialize';
 import SimpleCard from './SimpleCard';
+import OverlayCard from './OverlayCard';
 import '../App.css';
 
 class Shop extends Component {
@@ -10,7 +11,7 @@ class Shop extends Component {
         return (
           <Col s={12} m={4} key={`col-${index}`}>
             <a href={`${product.checkout_url.display}`} target={'blank'}>
-              <SimpleCard title='' image_source={product.media.source} />
+              <OverlayCard title={product.name} price={product.price.formatted_with_symbol} image_source={product.media.source} />
             </a>
           </Col>
         )

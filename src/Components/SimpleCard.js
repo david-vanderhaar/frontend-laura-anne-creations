@@ -4,14 +4,6 @@ import '../App.css';
 
 class SimpleCard extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: 'title',
-      image_url: 'https://i.ytimg.com/vi/sJC5VSEbFyY/maxresdefault.jpg',
-    }
-  }
-
   render() {
     return (
       <div className="SimpleCard">
