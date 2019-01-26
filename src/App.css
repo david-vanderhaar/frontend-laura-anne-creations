@@ -6,10 +6,23 @@ body {
 
 }
 
+#root>div {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#footer {
+  margin-bottom: 24px; 
+  margin-left: 240px; 
+  flex: 0 1 auto;
+}
+
 #main {
   margin-left: 0;
   margin-top: 60px;
   padding-left: 240px;
+  flex: 1;
 }
 
 .Logo img {
@@ -230,6 +243,9 @@ img.carousel-image {
 @media screen and (max-width: 1024px) {
   #main {
     padding-left: 0px;
+  }
+  #footer {
+    margin-left: 0px;
   }
   .SideNav {
     display: none;

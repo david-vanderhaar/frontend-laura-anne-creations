@@ -9,7 +9,7 @@ class SimpleCard extends Component {
       <div className="SimpleCard">
         <CardPanel>
           <img className='cover-image' src={this.props.image_source} alt="shop"/>
-          <span className='flow-text'>{this.props.title}</span>
+          <span className=''>{this.props.title}</span>
         </CardPanel>
       </div>
     );

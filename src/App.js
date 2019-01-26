@@ -69,31 +69,17 @@ class App extends Component {
               <Route path={'/about'} component={About} />
             </AnimatedSwitch>
           </main>
+          <footer id="footer">
+            <div className="footer-copyright">
+              <div className="container grey-text">
+                © {(new Date()).getFullYear()} Laura Anne Creations, any artwork and images of artwork are sole property of Laura A. Rogers and may not be reproduced or used for profit without artist's permission
+              </div>
+            </div>
+          </footer>
         </div>
       </HashRouter>
     )
   }
 }
-// const App = () => (
-//   <HashRouter>
-//   <div>
-//     <header id="header">
-//       <Nav />
-//     </header>
-//     <main id="main">
-//       <Route exact path={'/'} component={Home} />
-//       <AnimatedSwitch
-//         atEnter={{ opacity: 0 }}
-//         atLeave={{ opacity: 0 }}
-//         atActive={{ opacity: 1 }}
-//         className="fade"
-//       >
-//         <Route path={'/game'} component={Home} />
-//         <Route path={'/battlesim'} component={Home} />
-//       </AnimatedSwitch>
-//     </main>
-//   </div>
-//   </HashRouter>
-// )
 
 export default App;
