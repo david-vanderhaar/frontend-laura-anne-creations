@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/frontend-laura-anne-creations/static/media/Roboto-Light.3c37aa69.woff2"
   },
   {
-    "revision": "c8af30723d5eece329b2",
-    "url": "/frontend-laura-anne-creations/static/css/main.148322c5.chunk.css"
+    "revision": "4bd983f919a0ba64091e",
+    "url": "/frontend-laura-anne-creations/static/css/main.e92489ac.chunk.css"
   },
   {
-    "revision": "c0f1e4a4fdfb8048c72e86aadb2a247d",
-    "url": "/frontend-laura-anne-creations/static/media/Roboto-Bold.c0f1e4a4.woff2"
+    "revision": "eed9aab5449cc9c8430d7d258108f602",
+    "url": "/frontend-laura-anne-creations/static/media/Roboto-Bold.eed9aab5.woff"
   },
   {
-    "revision": "67890eb4330f5a61d6e7",
-    "url": "/frontend-laura-anne-creations/static/js/1.67890eb4.chunk.js"
+    "revision": "d76b919fd0b6ebbcdfcb",
+    "url": "/frontend-laura-anne-creations/static/js/1.d76b919f.chunk.js"
   },
   {
     "revision": "6b4a4434143ba412d14a",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/frontend-laura-anne-creations/static/media/Roboto-Thin.44b78f14.woff"
   },
   {
-    "revision": "c8af30723d5eece329b2",
-    "url": "/frontend-laura-anne-creations/static/js/main.c8af3072.chunk.js"
+    "revision": "4bd983f919a0ba64091e",
+    "url": "/frontend-laura-anne-creations/static/js/main.4bd983f9.chunk.js"
   },
   {
     "revision": "ea36cd9a0e9eee97012a67b8a4570d7b",
@@ -48,23 +48,23 @@ self.__precacheManifest = [
     "url": "/frontend-laura-anne-creations/static/media/Roboto-Regular.3cf6adf6.woff"
   },
   {
-    "revision": "cf4d60bc0b1d4b2314085919a00e1724",
-    "url": "/frontend-laura-anne-creations/static/media/Roboto-Medium.cf4d60bc.woff"
-  },
-  {
     "revision": "1561b424aaef2f704bbd89155b3ce514",
     "url": "/frontend-laura-anne-creations/static/media/Roboto-Medium.1561b424.woff2"
   },
   {
-    "revision": "eed9aab5449cc9c8430d7d258108f602",
-    "url": "/frontend-laura-anne-creations/static/media/Roboto-Bold.eed9aab5.woff"
+    "revision": "cf4d60bc0b1d4b2314085919a00e1724",
+    "url": "/frontend-laura-anne-creations/static/media/Roboto-Medium.cf4d60bc.woff"
   },
   {
-    "revision": "67890eb4330f5a61d6e7",
+    "revision": "c0f1e4a4fdfb8048c72e86aadb2a247d",
+    "url": "/frontend-laura-anne-creations/static/media/Roboto-Bold.c0f1e4a4.woff2"
+  },
+  {
+    "revision": "d76b919fd0b6ebbcdfcb",
     "url": "/frontend-laura-anne-creations/static/css/1.053c4227.chunk.css"
   },
   {
-    "revision": "1dac0decc6dda72cca960e18845733df",
+    "revision": "de70136f15be3c7c738cbeb22083a301",
     "url": "/frontend-laura-anne-creations/index.html"
   }
 ];
