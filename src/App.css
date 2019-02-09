@@ -27,9 +27,6 @@ body {
 
 .Logo img {
   cursor: pointer;
-}
-
-.HeaderNav .Logo img {
   height: 60px;
 }
 

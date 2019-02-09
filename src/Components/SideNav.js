@@ -20,8 +20,8 @@ class SideNav extends Component {
 
     return (
       <div id="sideNav" className="SideNav">
-        <Logo />
         <div className="top-nav">
+          <Logo />
           <div className="shop-links">
             <div className="shop-link-header">Shop</div>
             <ul>

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
+import laura_logo from '../laura-logo-l.jpg';
 
 class Logo extends Component {
   render() {
     return (
       <div className="Logo">
         <img
-          src={logo}
+          src={laura_logo}
           className="logo"
           alt="logo"
           onClick={() => {window.location.hash = '/'}}
