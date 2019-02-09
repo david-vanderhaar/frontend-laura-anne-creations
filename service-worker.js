@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/frontend-laura-anne-creations/precache-manifest.1ecd3b69036db4145bd35dc0b58b007a.js"
+  "/frontend-laura-anne-creations/precache-manifest.fda24223948f468e7cc1b10fa9feb2e3.js"
 );
 
 workbox.clientsClaim();
