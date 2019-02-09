@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "3c37aa69cd77e6a53a067170fa8fe2e9",
-    "url": "/static/media/Roboto-Light.3c37aa69.woff2"
+    "revision": "44b78f142603eb69f593ed4002ed7a4a",
+    "url": "/static/media/Roboto-Thin.44b78f14.woff"
   },
   {
     "revision": "598a41b54b6c08c0b30b",
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/static/media/laura-logo-l.c7bcb24b.jpg"
   },
   {
-    "revision": "1f35e6a11d27d2e10d28946d42332dc5",
-    "url": "/static/media/Roboto-Thin.1f35e6a1.woff2"
+    "revision": "3c37aa69cd77e6a53a067170fa8fe2e9",
+    "url": "/static/media/Roboto-Light.3c37aa69.woff2"
   },
   {
-    "revision": "44b78f142603eb69f593ed4002ed7a4a",
-    "url": "/static/media/Roboto-Thin.44b78f14.woff"
+    "revision": "1f35e6a11d27d2e10d28946d42332dc5",
+    "url": "/static/media/Roboto-Thin.1f35e6a1.woff2"
   },
   {
     "revision": "ea36cd9a0e9eee97012a67b8a4570d7b",
@@ -52,12 +52,12 @@ self.__precacheManifest = [
     "url": "/static/media/Roboto-Medium.1561b424.woff2"
   },
   {
-    "revision": "c0f1e4a4fdfb8048c72e86aadb2a247d",
-    "url": "/static/media/Roboto-Bold.c0f1e4a4.woff2"
-  },
-  {
     "revision": "cf4d60bc0b1d4b2314085919a00e1724",
     "url": "/static/media/Roboto-Medium.cf4d60bc.woff"
+  },
+  {
+    "revision": "c0f1e4a4fdfb8048c72e86aadb2a247d",
+    "url": "/static/media/Roboto-Bold.c0f1e4a4.woff2"
   },
   {
     "revision": "eed9aab5449cc9c8430d7d258108f602",
