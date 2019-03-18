@@ -40,7 +40,7 @@ class App extends Component {
       });
     });
 
-    this.setState({ products, shops }, console.log(products));
+    this.setState({ products, shops });
   }
 
   render() {
@@ -57,6 +57,7 @@ class App extends Component {
             <Nav shops={this.state.shops}/>
           </header>
           <main id="main">
+            <h1>Laura Anne Creations</h1>
             <Route exact path={'/'} render={(props) => <Home shops={this.state.shops}/>} />
             <AnimatedSwitch
               atEnter={{ opacity: 0 }}

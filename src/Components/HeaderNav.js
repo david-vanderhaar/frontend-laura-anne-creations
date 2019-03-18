@@ -4,31 +4,12 @@ import Logo from './Logo.js';
 
 class HeaderNav extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      sideNavVisible: false
-    }
-  }
-
-  toggleSideNav() {
-    let sideNav = document.getElementById('sideNav');
-    switch (this.state.sideNavVisible) {
-      case true:
-        sideNav.classList.remove("SideNavMobile");
-        break;
-      case false:
-        sideNav.classList.add("SideNavMobile");
-        break;
-      default:
-    }
-    this.setState({
-      sideNavVisible: !this.state.sideNavVisible
-    })
+  onToggleSideNav () {
+    this.props.handleToggleSideNav(!this.props.sideNavVisible);
   }
 
   render() {
-    const sideNavToggle = this.state.sideNavVisible
+    const sideNavToggle = this.props.sideNavVisible
       ? (
         <FontAwesomeIcon
           icon={['fas', 'times']}
@@ -45,14 +26,19 @@ class HeaderNav extends Component {
           <ul className="left">
             <li
               className="side-nav-trigger"
-              onClick={this.toggleSideNav.bind(this)}
+              onClick={this.onToggleSideNav.bind(this)}
             >
               <span>
                 { sideNavToggle }
               </span>
             </li>
           </ul>
-          <div className="brand-logo right"><Logo /></div>
+          <div 
+            className="brand-logo center"
+            onClick={() => { this.props.handleToggleSideNav(false) }}
+          >
+            <Logo />
+          </div>
         </div>
       </nav>
     );

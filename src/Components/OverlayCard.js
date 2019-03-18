@@ -15,6 +15,10 @@ class OverlayCard extends Component {
         </div>
         <CardPanel>
           <img className='cover-image' src={this.props.image_source} alt="shop" />
+          <div className='overlay-text overlay-text-mobile'>
+            <span className="overlay-title">{this.props.title}</span>
+            <span className="overlay-subtitle">{this.props.price}</span>
+          </div>
         </CardPanel>
       </div>
     );
