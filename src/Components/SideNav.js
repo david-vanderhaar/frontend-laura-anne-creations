@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Logo from './Logo.js';
 
 class SideNav extends Component {
 
@@ -22,10 +21,6 @@ class SideNav extends Component {
     return (
       <div id="sideNav" className="SideNav">
         <div className="top-nav">
-          <Logo />
-          {/* <div className='brand-text flow-text'>
-            Laura Anne Creations
-          </div> */}
           <div className="shop-links">
             <div className="shop-link-header">Shop</div>
             <ul>

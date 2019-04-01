@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-materialize';
-import SimpleCard from './SimpleCard';
 import OverlayCard from './OverlayCard';
 import '../App.css';
 
@@ -19,6 +18,7 @@ class Shop extends Component {
     });
     return (
       <div className="Shop">
+        <h3 className='flow-text center'>{this.props.category}</h3>
         <Row>
           {products}
         </Row>

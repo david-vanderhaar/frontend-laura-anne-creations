@@ -7,6 +7,7 @@ import About from './Components/About.js';
 import Contact from './Components/Contact.js';
 import Shop from './Components/Shop.js';
 import Nav from './Components/Nav.js';
+import Logo from './Components/Logo.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -57,7 +58,9 @@ class App extends Component {
             <Nav shops={this.state.shops}/>
           </header>
           <main id="main">
-            <h3 className='site-title'>Laura Anne Creations</h3>
+            <h3 className='site-title'>
+              <Logo /> Laura Anne Creations
+            </h3>
             <Route exact path={'/'} render={(props) => <Home shops={this.state.shops}/>} />
             <AnimatedSwitch
               atEnter={{ opacity: 0 }}

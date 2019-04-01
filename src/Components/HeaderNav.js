@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Logo from './Logo.js';
 
 class HeaderNav extends Component {
 
@@ -37,7 +36,6 @@ class HeaderNav extends Component {
             className="brand-logo center"
             onClick={() => { this.props.handleToggleSideNav(false) }}
           >
-            <Logo />
           </div>
         </div>
       </nav>

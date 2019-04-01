@@ -37,16 +37,11 @@ body {
   height: var(--logo-size);
 }
 
-.HeaderNav .Logo img {
-  height: var(--logo-size-mobile);
-}
-
 .HeaderNav {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
-  height: var(--logo-size-mobile);
 }
 
 .HeaderNav {
@@ -62,8 +57,6 @@ body {
 .HeaderNav .side-nav-trigger {
   color: black;
   cursor: pointer;
-  height: var(--logo-size-mobile);
-  background-color: #eee;
 }
 
 .HeaderNav .side-nav-trigger:hover {
@@ -255,7 +248,6 @@ img.carousel-image {
   text-align: center;
   font-size: 48px;
   font-weight: 500;
-  /* color: #ccc; */
   color: #6f835a;
   padding: 0px 8px;
   font-family: 'Pinyon Script', cursive;
@@ -306,6 +298,6 @@ img.carousel-image {
     display: none;
   }
   .site-title {
-    font-size: 38px;
+    font-size: 30px;
   }
 }

@@ -15,9 +15,9 @@ class Home extends Component {
         </Col>
       )
     });
-    let shop_images = this.props.shops.map((shop) => {
-      return (shop.image_source)
-    });    
+    // let shop_images = this.props.shops.map((shop) => {
+    //   return (shop.image_source)
+    // });    
     return (
       <div className="Home">
         {/* <Row>
