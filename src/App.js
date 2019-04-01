@@ -57,7 +57,7 @@ class App extends Component {
             <Nav shops={this.state.shops}/>
           </header>
           <main id="main">
-            <h1>Laura Anne Creations</h1>
+            <h3 className='site-title'>Laura Anne Creations</h3>
             <Route exact path={'/'} render={(props) => <Home shops={this.state.shops}/>} />
             <AnimatedSwitch
               atEnter={{ opacity: 0 }}

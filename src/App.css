@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+
 :root {
   --logo-size: 180px; 
   --logo-size-mobile: 80px; 
@@ -149,7 +151,7 @@ body {
 }
 
 .Home {
-  padding: 72px;
+  padding: 0px 72px 72px 72px;
 }
 
 .About {
@@ -158,6 +160,10 @@ body {
 
 .Contact {
   padding: 0% 20%;
+}
+
+.Contact a {
+  color: #6f835a;
 }
 
 .About .about-text {
@@ -225,7 +231,8 @@ body {
 }
 
 a.highlight-link {
-  color: red;
+  /* color: #14c4b9; */
+  color: #4fa8c4;
 }
 
 img.cover-image {
@@ -242,6 +249,16 @@ img.carousel-image {
 .block-center {
   margin: auto;
   width: 50%;
+}
+
+.site-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  /* color: #ccc; */
+  color: #6f835a;
+  padding: 0px 8px;
+  font-family: 'Pinyon Script', cursive;
 }
 
 /* Desktop */
@@ -279,6 +296,7 @@ img.carousel-image {
     display: block;
     padding: 0;
     width: 100%;
+    margin-top: 60px;
   }
   img.carousel-image {
     width: 100%;
@@ -286,5 +304,8 @@ img.carousel-image {
   }
   .simple-card-overlay {
     display: none;
+  }
+  .site-title {
+    font-size: 38px;
   }
 }

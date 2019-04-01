@@ -20,11 +20,11 @@ class Home extends Component {
     });    
     return (
       <div className="Home">
-        <Row>
+        {/* <Row>
           <div className="center">
             <SimpleCarousel duration={10000} images={shop_images} shops={this.props.shops} />
           </div>
-        </Row>
+        </Row> */}
         <Row>
           { shops_cards }
         </Row>
