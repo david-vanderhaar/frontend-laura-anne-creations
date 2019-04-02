@@ -8,10 +8,10 @@
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/laura-logo-l.jpg": "/static/media/laura-logo-l.c7bcb24b.jpg",
-  "static/media/materialize.css": "/static/media/Roboto-Thin.1f35e6a1.woff2",
-  "static/css/main.48145635.chunk.css.map": "/static/css/main.48145635.chunk.css.map",
+  "static/media/materialize.css": "/static/media/Roboto-Thin.44b78f14.woff",
   "static/css/1.fd56abfe.chunk.css.map": "/static/css/1.fd56abfe.chunk.css.map",
+  "static/css/main.48145635.chunk.css.map": "/static/css/main.48145635.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.5dcc5157e371ce7961202a23a6486e97.js": "/precache-manifest.5dcc5157e371ce7961202a23a6486e97.js",
+  "precache-manifest.2901feec90287bb40a57774cc45fbd17.js": "/precache-manifest.2901feec90287bb40a57774cc45fbd17.js",
   "service-worker.js": "/service-worker.js"
 }
